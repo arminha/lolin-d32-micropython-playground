@@ -22,6 +22,21 @@ Reference
 minicom -b 115200 -D /dev/ttyUSB0
 ```
 
+## Manage files in the board file system
+
+Use [ampy](https://github.com/scientifichackers/ampy)
+
+```sh
+# list files
+ampy -D /dev/ttyUSB0 ls
+
+# read files
+ampy -D /dev/ttyUSB0 get FILENAME
+
+# write files
+ampy -D /dev/ttyUSB0 put FILENAME
+```
+
 ## Blinking LED
 
 ```python

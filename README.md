@@ -18,6 +18,8 @@ Reference
 
 ## Serial Console with Python REPL
 
+Use [minicom](https://wiki.emacinc.com/wiki/Getting_Started_With_Minicom)
+
 ```sh
 minicom -b 115200 -D /dev/ttyUSB0
 ```

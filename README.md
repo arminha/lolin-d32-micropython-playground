@@ -21,7 +21,7 @@ Reference
 Use [minicom](https://wiki.emacinc.com/wiki/Getting_Started_With_Minicom)
 
 ```sh
-minicom -b 115200 -D /dev/ttyUSB0
+minicom -D /dev/ttyUSB0 minirc.dfl
 ```
 
 ## Manage files in the board file system
@@ -30,13 +30,13 @@ Use [ampy](https://github.com/scientifichackers/ampy)
 
 ```sh
 # list files
-ampy -D /dev/ttyUSB0 ls
+ampy ls
 
 # read files
-ampy -D /dev/ttyUSB0 get FILENAME
+ampy get FILENAME
 
 # write files
-ampy -D /dev/ttyUSB0 put FILENAME
+ampy put FILENAME
 ```
 
 ## Blinking LED
